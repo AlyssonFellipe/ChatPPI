@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comunidade Chat</title>
+
+    <link rel="stylesheet" href="../css/chat.css">
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <div class="login-screen" id="login">
+        <div class="login-box">
+            <h2>Entrar no Chat</h2>
+            <input id="name" placeholder="Seu nome">
+            <button onclick="enter()">Entrar</button>
+        </div>
+    </div>
+
+    <!-- APP -->
+    <div class="container" id="app">
+
+        <!-- MENU -->
+        <aside class="menu">
+            <h2>Chats</h2>
+
+            <button onclick="openChat('geral')">💬 Geral</button>
+            <button onclick="openChat('informatica')">💻 Informática</button>
+
+            <button onclick="openChat('msi')">🔒 MSI</button>
+
+            <button onclick="openChat('mecanica')">🔒 Mecânica</button>
+            <button onclick="openChat('refrigeracao')">🔒 Refrigeração</button>
+        </aside>
+
+        <!-- CHAT -->
+        <main class="chat-area">
+
+            <div id="chatTitle">Selecione um chat</div>
+
+            <div id="chatBox"></div>
+
+            <div class="input-area">
+                <input id="msg" placeholder="Mensagem...">
+                <button onclick="send()">Enviar</button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="../script/newChat.js"></script>
+
+</body>
+
+</html>
